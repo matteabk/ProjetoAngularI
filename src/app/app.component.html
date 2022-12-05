@@ -1,5 +1,10 @@
-<app-core-section
-    [iconElement]="'bi bi-bag-fill'"
-    [textElement]="'Work Experience'"
+<div *ngFor="let container of experiencesContainers">
+  <app-core-section
+    [iconElement]="container.icon"
+    [textElement]="container.title"
+    [experiences]="container.experiences"
 >
 </app-core-section>
+</div>
+
+<app-skill-level [skillLevel]="'50'"></app-skill-level>

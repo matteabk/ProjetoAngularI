@@ -1,1 +1,4 @@
-<p>skill-level works!</p>
+<p>{{ skillTitle }}</p>
+<div class="progress" style="width: 80%;">
+  <div class="progress-bar" role="progressbar" [ngStyle]="{'width.%': skillLevel}" aria-valuenow="skillLevel" aria-valuemin="0" aria-valuemax="100">{{skillLevel}}%</div>
+</div>
