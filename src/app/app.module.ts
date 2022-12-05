@@ -1,16 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SideSectionComponent } from './components/side-section/side-section.component';
+import { CoreSectionComponent } from './components/core-section/core-section.component';
+import { FormsComponent } from './components/forms/forms.component';
+import { IconTextComponent } from './components/icon-text/icon-text.component';
+import { SkillLevelComponent } from './components/skill-level/skill-level.component';
+import { InfoTextComponent } from './components/info-text/info-text.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    SideSectionComponent,
+    CoreSectionComponent,
+    FormsComponent,
+    IconTextComponent,
+    SkillLevelComponent,
+    InfoTextComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
