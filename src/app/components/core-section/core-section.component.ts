@@ -11,4 +11,5 @@ export class CoreSectionComponent {
   @Input()  public iconElement!: string;
   @Input()  public textElement!: string;
   @Input()  public textDateElement!: string;
+
 }
