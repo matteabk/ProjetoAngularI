@@ -1,5 +1,8 @@
+
 <p>Find me on social media</p>
-<div *ngFor="let socialMedia of socialMedias">
-  <a href="{{socialMedia.text}}" target="_blank"><i class="{{socialMedia.icon}}"></i></a>
+<div class="d-flex ">
+  <div *ngFor="let socialMedia of socialMedias">
+    <a href="{{socialMedia.text}}" target="_blank"><i class="{{socialMedia.icon}}"></i></a>
+  </div>
 </div>
 <p>Powered by </p>
