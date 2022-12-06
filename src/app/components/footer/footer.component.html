@@ -1,1 +1,5 @@
-<p>footer works!</p>
+<p>Find me on social media</p>
+<div *ngFor="let socialMedia of socialMedias">
+  <a href="{{socialMedia.text}}" target="_blank"><i class="{{socialMedia.icon}}"></i></a>
+</div>
+<p>Powered by </p>
