@@ -1,8 +1,9 @@
-
-<p>Find me on social media</p>
-<div class="d-flex ">
+<div class="d-flex flex-column my-lg-4">
+<p class="d-flex justify-content-center my-lg-1">Find me on social media</p>
+<div class="w-25 d-flex justify-content-around align-self-center my-lg-1">
   <div *ngFor="let socialMedia of socialMedias">
     <a href="{{socialMedia.text}}" target="_blank"><i class="{{socialMedia.icon}}"></i></a>
   </div>
 </div>
-<p>Powered by </p>
+<p class="d-flex justify-content-center my-lg-1">Powered by </p>
+</div>
