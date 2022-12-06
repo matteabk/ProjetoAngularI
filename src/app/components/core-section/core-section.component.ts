@@ -11,5 +11,5 @@ export class CoreSectionComponent {
   @Input()  public textElement!: string;
   @Input() public experiences!: Experience[];
 
-
 }
+

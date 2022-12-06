@@ -43,8 +43,10 @@ export class AppComponent {
 
   public contact: ContactData = {
     imageUrl: "https://www.w3schools.com/w3images/avatar_hat.jpg",
-    name: "Fulano",
     contactInfo: [{
+      icon: "bi bi-file-earmark-person-fill",
+      text: "Fulano de Tal"},
+      {
       icon: "bi bi-wallet-fill",
       text: "Designer"
     },
@@ -68,12 +70,12 @@ export class AppComponent {
       experiences: [{
         titleElement: "Front-end Developer / Safra.com",
         textDateElement: "Jun-2015  -  Current",
-        paragElement: "teste teste teste"
+        paragElement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
         titleElement: "Front-end Developer / Safra.com",
         textDateElement: "Jun-2014  -  Jun-2015",
-        paragElement: "teste2 teste2 teste2"
+        paragElement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       }
       ]
     },
@@ -83,12 +85,12 @@ export class AppComponent {
       experiences: [{
         titleElement: "Colegio Liceu",
         textDateElement: "Jun-1995  -  Dez-2005",
-        paragElement: "Educacao educacao educacao"
+        paragElement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
         titleElement: "ADA",
         textDateElement: "Jun-2022  -  Current",
-        paragElement: "teste2 teste2 teste2"
+        paragElement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       }
       ]
     }

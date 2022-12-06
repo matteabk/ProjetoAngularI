@@ -1,13 +1,8 @@
-<div class="py-lg-3 my-lg-3 px-lg-4 bg-info shadow p-3 mb-5 bg-white">
-  <app-icon-text
-    [iconElement]="iconElement"
-    [textElement]="textElement"
-  ></app-icon-text>
-  <div *ngFor="let experience of experiences">
-    <app-info-text
-      [titleElement]="experience.titleElement"
-      [paragElement]="experience.paragElement"
-      [textElement]="experience.textDateElement"
-    ></app-info-text>
+<div class="py-3 my-3 px-4 bg-info shadow p-3 mb-5 bg-white rounded">
+  <app-icon-text [iconElement]="iconElement" [textElement]="textElement" class="h2"></app-icon-text>
+  <div *ngFor="let experience of experiences; let i = index;">
+    <app-info-text [titleElement]="experience.titleElement" [paragElement]="experience.paragElement"
+      [textElement]="experience.textDateElement"></app-info-text>
+      <hr *ngIf="i < experiences.length - 1;" class="opacity-25 textColorScheme">
   </div>
 </div>

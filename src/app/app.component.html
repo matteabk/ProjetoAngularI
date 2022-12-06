@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <app-side-section [contact]="contact" [skills]="skillBars" [languages]="languageBars" class="col-md-4"></app-side-section>
+    <app-side-section [contact]="contact" [skills]="skillBars" [languages]="languageBars" class="col-md-4 rounded"></app-side-section>
     <div class = "col-md-8">
       <div *ngFor="let container of experiencesContainers">
         <app-core-section [iconElement]="container.icon" [textElement]="container.title"
@@ -11,4 +11,5 @@
   </div>
 </div>
 
-<app-footer [socialMedias]="socialMedias"></app-footer>
+<app-footer [socialMedias]="socialMedias" class="footerColorScheme d-flex flex-column mt-4 "></app-footer>
+
