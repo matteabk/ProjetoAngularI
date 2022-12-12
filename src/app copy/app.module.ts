@@ -9,7 +9,6 @@ import { FormsComponent } from './components/forms/forms.component';
 import { IconTextComponent } from './components/icon-text/icon-text.component';
 import { SkillLevelComponent } from './components/skill-level/skill-level.component';
 import { InfoTextComponent } from './components/info-text/info-text.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

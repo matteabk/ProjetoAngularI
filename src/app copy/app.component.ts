@@ -1,4 +1,3 @@
-import { FormGroup } from '@angular/forms';
 import { IconText } from './models/icon-text.model';
 import { Experience } from './models/experience.model';
 import { Component } from '@angular/core';
@@ -112,9 +111,5 @@ export class AppComponent {
   {
     icon: "bi bi-linkedin",
     text: "https://linkedin.com"
-  }];
-
-  onFormSubmitted(formData: FormGroup) : void{
-    console.log(formData.value);
-  }
+  }]
 }
