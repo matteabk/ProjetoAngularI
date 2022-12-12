@@ -47,7 +47,7 @@
           <div class="mb-3 form-group">
             <label for="phone" class="col-form-label">Celular:</label>
             <input (keypress)="keyPress($event)" type="text" name="phone" class="form-control" formControlName="phone"
-              id="teste" placeholder="(00) 00000-0000"
+              id="phone" placeholder="(00) 00000-0000"
               [ngClass]="{ 'is-invalid': f['phone'].errors && f['phone'].touched}">
             <div *ngIf="f['phone'].errors && f['phone'].touched" class="invalid-feedback">
               <div *ngIf="f['phone'].errors['required']">Número de telefone obrigatório</div>
