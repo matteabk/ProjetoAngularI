@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SideSectionComponent } from './components/side-section/side-section.component';
 import { CoreSectionComponent } from './components/core-section/core-section.component';
-import { FormsComponent } from './components/forms/forms.component';
 import { IconTextComponent } from './components/icon-text/icon-text.component';
 import { SkillLevelComponent } from './components/skill-level/skill-level.component';
 import { InfoTextComponent } from './components/info-text/info-text.component';
@@ -19,7 +18,6 @@ import { ToastComponent } from './components/toast/toast.component';
     FooterComponent,
     SideSectionComponent,
     CoreSectionComponent,
-    FormsComponent,
     IconTextComponent,
     SkillLevelComponent,
     InfoTextComponent,
