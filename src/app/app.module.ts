@@ -11,6 +11,7 @@ import { SkillLevelComponent } from './components/skill-level/skill-level.compon
 import { InfoTextComponent } from './components/info-text/info-text.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ToastComponent } from './components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     SkillLevelComponent,
     InfoTextComponent,
     ContactFormComponent,
+    ToastComponent,
   ],
   imports: [
     BrowserModule,

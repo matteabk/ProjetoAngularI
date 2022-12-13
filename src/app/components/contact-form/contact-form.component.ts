@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import {Toast} from 'bootstrap'
 
@@ -12,13 +12,9 @@ export class ContactFormComponent implements OnInit {
 
   @Output() public formDataOutput: EventEmitter<FormGroup> = new EventEmitter();
 
-  contactForm!: FormGroup;
+  toast!: Toast;
 
-  @ViewChild('myToast',{static:true}) toastEl: any
-  isClosed(){
-    return !this.toastEl.nativeElement.classList.contains('show')
-  }
-  toast:any
+  contactForm!: FormGroup;
 
   ngOnInit() {
     this.buildForm();
@@ -41,8 +37,7 @@ export class ContactFormComponent implements OnInit {
   public onSubmit(): void {
     this.formDataOutput.emit(this.contactForm);
     this.contactForm.reset();
-    
-    this.toast=new Toast(this.toastEl.nativeElement,{});
+
     this.toast.show();
   }
 
@@ -56,5 +51,9 @@ export class ContactFormComponent implements OnInit {
   }
 
   get f() { return this.contactForm.controls; }
+
+  createToast(toastElement : Toast): void {
+    this.toast = toastElement;
+  }
 
 }
