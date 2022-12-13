@@ -53,7 +53,7 @@ export class AppComponent {
   }
   ]
   public contact: ContactData = {
-    imageUrl: "./../assets/images/FOTO_PERFIL_-_Matheus_A.jpg",
+    imageUrl: "https://github.com/matteabk/ProjetoAngularI/blob/main/src/assets/FOTO_PERFIL_-_Matheus_A.jpg?raw=true",
     contactInfo: [{
       icon: "bi bi-person-fill",
       text: "Matheus Alencastro"},
