@@ -27,7 +27,6 @@ export class AppComponent {
     skillLevel: "10"
   }
   ]
-
   public languageBars: Skill[] = [{
     skillTitle: "Portuguese",
     skillLevel: "100"
@@ -41,11 +40,10 @@ export class AppComponent {
     skillLevel: "50"
   }
   ]
-
   public contact: ContactData = {
     imageUrl: "https://www.w3schools.com/w3images/avatar_hat.jpg",
     contactInfo: [{
-      icon: "bi bi-file-earmark-person-fill",
+      icon: "bi bi-person-fill",
       text: "Fulano de Tal"},
       {
       icon: "bi bi-wallet-fill",
@@ -63,7 +61,6 @@ export class AppComponent {
     }
     ]
   }
-
   public experiencesContainers: ExperienceContainer[] = [
     {
       icon: "bi bi-bag-fill",
@@ -96,7 +93,6 @@ export class AppComponent {
       ]
     }
   ];
-
   public socialMedias: IconText[] = [{
     icon: "bi bi-github",
     text: "https://github.com/"
@@ -114,7 +110,7 @@ export class AppComponent {
     text: "https://linkedin.com"
   }];
 
-  onFormSubmitted(formData: FormGroup) : void{
+  onContactFormData (formData:FormGroup):void{
     console.log(formData.value);
   }
 }

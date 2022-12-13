@@ -10,6 +10,7 @@ import { IconTextComponent } from './components/icon-text/icon-text.component';
 import { SkillLevelComponent } from './components/skill-level/skill-level.component';
 import { InfoTextComponent } from './components/info-text/info-text.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsComponent,
     IconTextComponent,
     SkillLevelComponent,
-    InfoTextComponent
+    InfoTextComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,

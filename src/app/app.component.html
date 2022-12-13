@@ -11,5 +11,5 @@
   </div>
 </div>
 
-<app-footer [socialMedias]="socialMedias" class="footerColorScheme d-flex justify-content-center flex-column mt-4 " (formDataOutput)="onFormSubmitted($event)"></app-footer>
+<app-footer (contactDataOutput)="onContactFormData($event)" [socialMedias]="socialMedias" class="footerColorScheme d-flex justify-content-center flex-column mt-4" ></app-footer>
 
