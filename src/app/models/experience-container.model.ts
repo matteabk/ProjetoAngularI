@@ -1,4 +1,4 @@
-import { Experience } from "./experience.model";
+import { Experience } from './experience.model';
 
 export interface ExperienceContainer {
   icon: string;

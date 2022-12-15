@@ -1,15 +1,20 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import {Toast} from 'bootstrap'
-
+import { Toast } from 'bootstrap';
 
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.css']
+  styleUrls: ['./contact-form.component.css'],
 })
 export class ContactFormComponent implements OnInit {
-
   @Output() public formDataOutput: EventEmitter<FormGroup> = new EventEmitter();
 
   toast!: Toast;
@@ -20,21 +25,25 @@ export class ContactFormComponent implements OnInit {
     this.buildForm();
   }
 
-  private buildForm(): void{
+  private buildForm(): void {
     this.contactForm = new FormGroup({
-      name: new FormControl(null, [Validators.required, Validators.minLength(3)]),
+      name: new FormControl(null, [
+        Validators.required,
+        Validators.minLength(3),
+      ]),
       email: new FormControl(null, [
         Validators.required,
         Validators.email,
-        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')
+        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
       ]),
       phone: new FormControl(null, [
         Validators.required,
-        Validators.pattern("^[0-9]*$"),
+        Validators.pattern('^[0-9]*$'),
         Validators.minLength(11),
-        Validators.maxLength(11)
+        Validators.maxLength(11),
       ]),
-      message: new FormControl(null, [Validators.required]),
+      message: new FormControl(null, [
+        Validators.required]),
     });
   }
 
@@ -54,14 +63,15 @@ export class ContactFormComponent implements OnInit {
     }
   }
 
-  get f() { return this.contactForm.controls; }
+  get f() {
+    return this.contactForm.controls;
+  }
 
-  createToast(toastElement : Toast): void {
+  createToast(toastElement: Toast): void {
     this.toast = toastElement;
   }
 
   closeForm(): void {
     this.contactForm.reset();
   }
-
 }
