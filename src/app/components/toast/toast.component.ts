@@ -1,26 +1,32 @@
-import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { Toast } from 'bootstrap';
 
 @Component({
   selector: 'app-toast',
   templateUrl: './toast.component.html',
-  styleUrls: ['./toast.component.css']
+  styleUrls: ['./toast.component.css'],
 })
 export class ToastComponent implements OnInit {
-  @ViewChild('myToast',{static:true}) toastEl: any;
-  isClosed(){
+  @ViewChild('myToast', { static: true }) toastEl: any;
+  isClosed() {
     return !this.toastEl.nativeElement.classList.contains('show');
   }
 
-  @Output() toastEmitter :EventEmitter<Toast> = new EventEmitter<Toast>();
-  @Input() toastMessage!:string;
-  @Input() messageType:string = 'bg-success';
+  @Output() toastEmitter: EventEmitter<Toast> = new EventEmitter<Toast>();
+  @Input() toastMessage!: string;
+  @Input() messageType: string = 'bg-success';
 
   toast!: Toast;
 
   ngOnInit() {
-    this.toast = new Toast(this.toastEl.nativeElement,{});
+    this.toast = new Toast(this.toastEl.nativeElement, {});
     this.toastEmitter.emit(this.toast);
   }
-
 }
