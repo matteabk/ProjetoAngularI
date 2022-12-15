@@ -98,14 +98,14 @@ public experiencesContainers: ExperienceContainer[] = [
       paragElement: "Curso realizado através do programa Top Coders, em conjunto com o Banco Safra para formação WEB Full Stack, com foco em C# para Back-end e JS / Angular para o Front-end."
       },
       {
+      titleElement: "MBA Gestão Empresarial - FGV",
+      textDateElement: "Mar-2015 -  Mar-2017",
+      paragElement: "Curso de especialização em gestão de empresas."
+      },
+      {
       titleElement: "Engenharia Mecânica - Unicamp",
       textDateElement: "Jan-2008 -  Jul-2013",
       paragElement: "Bacharelado em Engenharia Mecânica."
-    },
-    {
-      titleElement: "MBA Gestão Empresarial - FGV",
-      textDateElement: "Jan-2008 -  Jul-2013",
-      paragElement: "Curso de especialização em gestão de empresas."
     }
     ]
   }
