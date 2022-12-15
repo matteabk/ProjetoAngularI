@@ -23,7 +23,11 @@ export class ContactFormComponent implements OnInit {
   private buildForm(): void{
     this.contactForm = new FormGroup({
       name: new FormControl(null, [Validators.required, Validators.minLength(3)]),
-      email: new FormControl(null, [Validators.required, Validators.email]),
+      email: new FormControl(null, [
+        Validators.required,
+        Validators.email,
+        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')
+      ]),
       phone: new FormControl(null, [
         Validators.required,
         Validators.pattern("^[0-9]*$"),
@@ -54,6 +58,10 @@ export class ContactFormComponent implements OnInit {
 
   createToast(toastElement : Toast): void {
     this.toast = toastElement;
+  }
+
+  closeForm(): void {
+    this.contactForm.reset();
   }
 
 }
