@@ -8,9 +8,6 @@ import { Toast } from 'bootstrap';
 })
 export class ToastComponent implements OnInit {
   @ViewChild('myToast',{static:true}) toastEl: any;
-  isClosed(){
-    return !this.toastEl.nativeElement.classList.contains('show');
-  }
 
   @Output() toastEmitter :EventEmitter<Toast> = new EventEmitter<Toast>();
   @Input() toastMessage!:string;
