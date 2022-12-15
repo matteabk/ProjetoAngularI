@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
 export class InfoTextComponent {
   @Input() public titleElement!: string;
   @Input() public paragElement!: string;
-  @Input() public iconElement!: string;
   @Input() public textElement!: string;
 }
